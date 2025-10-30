@@ -48,7 +48,16 @@ section::after {
   transform-style: preserve-3d;
 }
 
-.container:hover {
+.parentContainer {
+  height: 230px;
+  width: 380px;
+  position: relative;
+  z-index: 10;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.parentContainer:hover > .container {
   transform: rotateY(180deg);
 }
 
